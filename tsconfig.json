@@ -17,17 +17,11 @@
     "removeComments": false,
     "jsx": "preserve",
     "lib": ["esnext", "dom"],
-    "types": ["jest", "puppeteer", "node"],
+    "types": ["node"],
     "rootDir": ".",
     "paths": {
       "@spider/*": ["packages/*/src"]
     }
   },
-  "include": [
-    "packages/global.d.ts",
-    "packages/*/src",
-    "packages/runtime-dom/types/jsx.d.ts",
-    "packages/*/__tests__",
-    "test-dts"
-  ]
+  "include": ["packages/global.d.ts", "packages/*/src"]
 }

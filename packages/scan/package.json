@@ -1,18 +1,39 @@
 {
-  "name": "@spider/scan",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "@sugarat/ghost",
+  "version": "0.1.3",
+  "description": "phantom dependency scanning tool - 幽灵依赖扫描工具",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ATQQ/tools",
+    "directory": "packages/cli/ghost"
+  },
+  "homepage": "https://github.com/ATQQ/tools/blob/main/packages/cli/ghost/README.md",
   "bin": {
-    "scan-model": "bin/index.js"
+    "scan": "dist/bin.js"
   },
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "tsup --watch",
+    "build": "tsup --minify",
+    "prepublish": "pnpm build"
   },
+  "keywords": [
+    "phantom dependency",
+    "phantom",
+    "ghost dependency",
+    "CLI",
+    "幽灵依赖",
+    "幻影依赖"
+  ],
+  "author": "ATQQ",
+  "license": "MIT",
   "dependencies": {
-    "@spider/shared": "workspace:*"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+    "commander": "^9.2.0",
+    "gogocode": "^1.0.53",
+    "validate-npm-package-name": "^4.0.0"
+  }
 }

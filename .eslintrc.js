@@ -32,8 +32,6 @@ module.exports = {
       'error',
       'ObjectPattern > RestElement',
       'AwaitExpression'
-    ],
-    semi: 0,
-    'no-console': 'error'
+    ]
   }
 }
